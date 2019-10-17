@@ -1,38 +1,38 @@
 
-# LifeSports Challlenge and Hackathon
+## LifeSports Week 18 Challenge 
 
-### About Us
+This application allows the client to create users that can log their workouts. If the client needs to update one of the user's log, this application allows them to do that. The client is also allowed to delete the workout logs in the application. This app was made with node.js, express, and MongoDB Atlas and the app is deployed through Heroku.
+
+## Getting Started
+
+Clone or download this repo onto your local machine. Once you have done this, install the node packages. You can do this by running ```npm i``` on your command line tool.
 
 
-### Build Components
+## Running the app
 
-### Usage
+After you have installed all of the dependencies that are needed for this project, you can open the project up through your command line tool. First be in the root of the directory and then run ```npm run start``` in your command line tool. This will start the server and the react app at the same time.
 
-```js
 
-```
+## Stopping the app
 
-#### Challenge Instructions
+To stop running the server and the react app, you can hit ```command + z``` to close both.
 
-The challenge requirements for this week are as follows:
 
-1. Complete the API endpoints in the LifeSports Express server. Note that all MongoDB functions must use the mongoose data model that is provides
+## Built With
 
-2. Refactor this code to work with your MongoDB Atlas database. You should update your .env file so that you can use either mongodb locally on on Atlas
+* [React](https://github.com/facebook/react) - The framework used
+* [NodeJS](https://github.com/nodejs/node) - The development for server
+* [Express & Express Router](https://github.com/expressjs/express) - Used to create endpoints
+* [Morgan](https://github.com/expressjs/morgan) - Logging tool
+* [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) - Cloud database
+* [Concurrently](https://github.com/kimmobrunfeldt/concurrently) - Used to run servers at the same time
+* [Heroku](https://www.heroku.com) - App deployment
 
-3. Deploy your app to Heroku
+## Author
 
-4. Submit the link to your professionally composed GitHub acct with the Link to your working app by Monday, Oct 21 at 5pm. The github acct should have the link to your live heroku app
+* [Lucy Yang](https://github.com/l-yang-05)
 
-The APIs will be tested and the github accts reviewed to determine the number of points earned n the challenge submission
 
-#### Hackathon Challenge
+## License
 
-1. Use the working version of your LifeSports app from the Challenge to go the next level!
-
-2. Be creative! Develop a new and more engaging UI for your 'workout tracker' and deliver an app that will captivate the LifeSports' coaches!
-
-3. Each submission should include an updated UI, with updates, as required, to the mongoose data model, api server and integrations. All Submissions must be deployed with a professionally composed github repo and a live working app on Heroku
-
-4. The deadline for all submissions in Thursday, Oct 24 at 5pm
-
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
