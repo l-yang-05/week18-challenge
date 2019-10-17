@@ -12,8 +12,9 @@ const fs = require('fs')
 const path = require('path')
 
 const app = express();
-const port = process.env.PORT || 5000;
-let uri = `mongodb+srv://artartLyang:${process.env.PASSWORD}@cluster0-yp6e3.mongodb.net/test?retryWrites=true&w=majority`
+const port = process.env.PORT || 4000;
+let uri = process.env.ATLAS_URI
+
 
 // register middleware
 app.use(express.urlencoded({ extended: true }));
@@ -24,9 +25,10 @@ app.use(morgan('tiny', { stream: accessLogStream }))
 // Serve up static assets (heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
-  uri = `mongodb+srv://artartLyang:${process.env.PASSWORD}@cluster0-yp6e3.mongodb.net/test?retryWrites=true&w=majority`  // connection string for Atlas here  
+  uri = process.env.ATLAS_URI  // connection string for Atlas here  
 } else {
-  uri = "mongodb://localhost/challenge"  // connection string for localhost mongo here  
+  uri = process.env.ATLAS_URI  // connection string for localhost mongo here  
+  console.log(process.env.PORT)
 }
 
 // connection to database

@@ -86,7 +86,7 @@ export default class EditExercise extends Component {
 
     console.log(exercise);
 
-    axios.put('/exercises/update/' + this.props.match.params.id, exercise)
+    axios.post('/exercises/update/' + this.props.match.params.id, exercise)
       .then(res => console.log(res.data));
 
     window.location = '/';
@@ -103,7 +103,8 @@ export default class EditExercise extends Component {
               required
               className="form-control"
               value={this.state.username}
-              onChange={this.onChangeUsername}>
+              onChange={this.onChangeUsername} defaultValue="">
+              <option value="" disabled> --- Select A User ---</option>
               {
                 this.state.users.map(function (user) {
                   return <option
