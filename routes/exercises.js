@@ -41,25 +41,6 @@ router.post('/add', (req, res) => {
 
 })
 
-// router.route('/add').post((req, res) => {
-//     const username = req.body.username;
-//     const desc = req.body.description;
-//     const duration = Number(req.body.duration);
-//     const date = Date.parse(req.body.date)
-
-//     const newExercise = new Exercise({
-//         username,
-//         desc,
-//         duration,
-//         date
-//     })
-
-//     newExercise.save()
-//         .then(() => res.json('Exercise has been added'))
-//         .catch(err => res.status(400).json(`Error: ${err}`))
-
-// })
-
 
 // 3. retrieve a specfic exercise log
 // GET: /:id
